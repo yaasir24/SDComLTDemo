@@ -3,7 +3,7 @@
 
     <a href="index.html" class="logo d-flex align-items-center" style="height: 80px;">
       <!-- Uncomment the line below if you also wish to use an image logo -->
-       <img src="assets\img\SD 5-01.png" style="width:125px;height:150px !important;" alt="SDCom-logo">
+      <!-- <img src="assets\img\SD 5-01.png" style="width:125px;height:150px !important;" alt="SDCom-logo"> -->
       <!-- <h1>SD com LTD<span>.</span></h1> -->
     </a>
 
@@ -13,9 +13,29 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
   </div>
+
+  <script>
+    console.log("Script is read");
+    const mobileNavShow = document.querySelector('.mobile-nav-show');
+    const mobileNavHide = document.querySelector('.mobile-nav-hide');
+
+    document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
+      el.addEventListener('click', function (event) {
+        event.preventDefault();
+        mobileNavToogle();
+      })
+    });
+
+    function mobileNavToogle() {
+      document.querySelector('body').classList.toggle('mobile-nav-active');
+      mobileNavShow.classList.toggle('d-none');
+      mobileNavHide.classList.toggle('d-none');
+    }
+  </script>
 </header>
