@@ -1296,7 +1296,10 @@ section {
   font-family: var(--font-primary);
   font-size: 14px;
 }
-
+.stats-counter .row
+{
+  justify-content: center;
+}
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
